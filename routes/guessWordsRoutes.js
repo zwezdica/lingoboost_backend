@@ -5,7 +5,7 @@ const { protect, admin } = require("../middleware/authMiddleware");
 
 router.get("/start", protect, guessWordsController.startGame);
 
-router.get("/guess/:letter", protect, guessWordsController.guessLetter);
+router.post("/guess/:letter", protect, guessWordsController.guessLetter);
 
 router.get("/search", protect, admin, guessWordsController.searchWord);
 
