@@ -1,4 +1,9 @@
 # lingoboost_backend
+
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express-4.x-lightgrey)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.x-green)
+
 This is the backend server for a language learning application. It provides RESTful APIs for user authentication, game management (quizzes, flashcards, bingo, word guessing), and administrative functions.
 
 ## Features
