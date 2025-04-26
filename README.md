@@ -1,3 +1,4 @@
+
 # lingoboost_backend
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
@@ -6,7 +7,7 @@
 
 This is the backend server for a language learning application. It provides RESTful APIs for user authentication, game management (quizzes, flashcards, bingo, word guessing), and administrative functions.
 
-## Features
+## 📦 Features
 User authentication (registration, login, JWT)
 
 Admin dashboard with user management
@@ -27,7 +28,7 @@ User activity logging
 
 Multi-language support
 
-## Technologies
+## 🛠 Technologies
 Node.js
 
 Express.js
@@ -42,10 +43,7 @@ CORS for cross-origin requests
 
 Dotenv for environment variables
 
-## Installation
-
-
-## Installation
+## 🚀 Installation
 
 ### 1. Clone the repository
 ```bash
@@ -58,7 +56,7 @@ cd lingoboost_backend
 npm install
 ```
 
-### 3. Configure environment variables
+### 3. ⚙️ Configure environment variables
 Create a .env file in the root directory with:
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -66,12 +64,12 @@ JWT_SECRET=your_jwt_secret_key
 PORT=5000
 ```
 
-### 4. Start the server
+### 4. 🏃 Start the server
 ```bash
 npm start
 ```
 
-## API Endpoints
+## 📡 API Endpoints
 
 ### Authentication
 POST /api/auth/register - Register a new user    
@@ -126,7 +124,7 @@ POST /api/dragdrops - Add word (admin only)
 PUT /api/dragdrops/:id - Update word (admin only)      
 DELETE /api/dragdrops/:id - Delete word (admin only)      
 
-## Models
+## 📂 Models
 ### User:
 username     
 email     
@@ -148,11 +146,17 @@ DragDropWord
 
 Each game model contains word data with translations for different languages.
 
-## Security
-JWT authentication for protected routes       
-Role-based access control (admin/user)      
-Password hashing with bcrypt      
-Input validation      
-Secure headers with CORS configuration      
+## 🔒 Security
+ 
+
+| Feature               | Implementation Details                  | Status  |
+|-----------------------|----------------------------------------|---------|
+| 🔐 JWT Expiration     | 1 day token validity                   | ✅ Live |
+| 🗝️ Password Hashing   | bcrypt with 12 salt rounds             | ✅ Live |
+| 🚧 Protected Routes   | JWT verification middleware            | ✅ Live |
+| 🛡️ NoSQL Prevention   | Data sanitization + query validation   | ✅ Live |
+| 🌐 CORS               | Strict origin policy                   | ✅ Live |
+| 🌐 Role-based access  | Admin/User                             | ✅ Live |
+
 
 
